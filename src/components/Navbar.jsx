@@ -5,7 +5,7 @@ const navbar = () => {
   return (
     <header>
         <nav>
-            <img src="public/logo.png" alt="Logo" />
+            <img src="public/logo.svg" alt="Logo" />
             <ul>
                     {navLinks.map(({ label }) => (
                         <li key={label}>
@@ -17,7 +17,7 @@ const navbar = () => {
 
             <div className='flex-center gap-3'>
                 <button>
-                    <img src="public/search.png" alt="search" />
+                    <img src="public/search.svg"alt="search" />
                 </button>
                 <button>
                     <img src="public/cart.svg" alt="cart" />

@@ -94,12 +94,15 @@ body {
     nav {
       @apply container mx-auto flex-between px-5 2xl:px-0;
 
+      /* FIX 1: img is now a direct nav child (button moved outside img in HTML).
+         Added block display, fixed height, and cursor. */
       img {
-        @apply cursor-pointer hover:-translate-y-0.5 transition-all duration-300 ease-in-out;
+        @apply block h-5 w-auto cursor-pointer hover:-translate-y-0.5 transition-all duration-300 ease-in-out;
+      }
 
-        button {
-          @apply bg-transparent border-none outline-none cursor-pointer;
-        }
+      /* FIX 1b: button sits beside the img as a sibling, not nested inside it */
+      button {
+        @apply bg-transparent border-none outline-none cursor-pointer;
       }
 
       ul {
@@ -113,7 +116,9 @@ body {
   }
 
   #hero {
-    @apply h-fit lg:h-[80vh] col-center mt-40 lg:mt-20 2xl:mt-[7vh];
+    /* FIX 2: increased top margin so hero content clears the fixed header.
+       mt-28 (~7rem) on mobile, lg:mt-24 on desktop, 2xl keeps the vh-based offset. */
+    @apply h-fit lg:h-[80vh] col-center mt-28 lg:mt-24 2xl:mt-[7vh];
 
     div {
       @apply relative z-10 col-center lg:translate-y-16;
@@ -343,8 +348,8 @@ body {
           @apply p-10 rounded-3xl flex items-center gap-7 relative;
 
           background: #1d1d1f;
-          background-clip: padding-box; /* !important */
-          border: 3px solid transparent; /* !important */
+          background-clip: padding-box;
+          border: 3px solid transparent;
 
           ::before {
             content: "";
@@ -352,8 +357,8 @@ body {
             position: absolute;
             inset: 0px;
             z-index: -1;
-            margin: -5px; /* !important */
-            border-radius: 24px; /* !important */
+            margin: -5px;
+            border-radius: 24px;
             background: linear-gradient(
               91deg,
               #0096ff 0%,
