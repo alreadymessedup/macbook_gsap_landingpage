@@ -51,7 +51,10 @@ html {
   scroll-behavior: smooth;
 }
 
+
+
 body {
+  padding-top: 60px;
   width: 100vw;
   overflow-x: hidden;
   background-color: #000;
