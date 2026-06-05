@@ -9,7 +9,7 @@ import Performance from './components/performance'
 import Features from './components/Features'
 import Highlights from './components/highlights'
 import Footer from './components/footer'
-
+import Specs from './components/specs'
 
 gsap.registerPlugin(ScrollTrigger, SplitText)
 
@@ -21,6 +21,7 @@ const App = () => {
       <ProductViewer/>
       <Showcase/>
       <Performance/>
+      <Specs/>
       <Features/>
       <Highlights/>
       <Footer/>

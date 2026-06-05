@@ -1,3 +1,4 @@
+
 import {useMediaQuery} from "react-responsive";
 import {useGSAP} from "@gsap/react";
 import gsap from "gsap";
@@ -56,3 +57,5 @@ export default function Highlights() {
         </section>
     )
 }
+
+

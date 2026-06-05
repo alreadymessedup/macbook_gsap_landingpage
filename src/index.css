@@ -55,6 +55,9 @@ html {
 
 body {
   padding-top: 60px;
+  padding-left: 48px;
+  padding-right: 48px;
+
   width: 100vw;
   overflow-x: hidden;
   background-color: #000;
@@ -439,3 +442,4 @@ body {
     }
   }
 }
+
