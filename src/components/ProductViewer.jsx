@@ -5,7 +5,7 @@ import { Canvas } from '@react-three/fiber'
 import { OrbitControls } from '@react-three/drei'
 import MacbookModel14 from './models/Macbook-14'
 import MacbookModel16 from './models/Macbook-16'
-import StudioLights from './three/studiolights'
+import StudioLights from './three/Studiolights'
 import ModelSwitcher from './three/ModelSwitcher'
 import { useMediaQuery } from 'react-responsive'
 

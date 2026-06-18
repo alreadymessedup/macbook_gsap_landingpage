@@ -1,5 +1,5 @@
 import {Canvas} from "@react-three/fiber";
-import StudioLights from "./three/StudioLights.jsx"; 
+import StudioLights from "./three/Studiolights.jsx"; 
 import {features, featureSequence} from "../constants/index.js";
 import clsx from "clsx";
 import {Suspense, useEffect, useRef} from "react";
