@@ -34,7 +34,7 @@ export default function Showcase() {
   return (
     <section id="showcase">
         <div className="media">
-            <video src="/videos/game.mp4" loop muted autoplay playsInline  />
+            <video src="/videos/game.mp4" loop muted autoPlay playsInline />
             <div className="mask">
                 <img src="public/mask-logo.svg " />
             </div>
